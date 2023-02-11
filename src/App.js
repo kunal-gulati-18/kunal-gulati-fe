@@ -10,6 +10,7 @@ import { Offline, Online } from "react-detect-offline";
 import Homepage from './components/main-page/Homepage';
 import ErrorPage from './components/error-page/404_page';
 import NetworkError from './components/error-page/NetworkErrorPage';
+import './scss/utility.scss';
 
 const App = () => {
   return (

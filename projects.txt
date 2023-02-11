@@ -1,0 +1,24 @@
+1.Restro(Shifting it to react)
+  Link: https://kunal-gulati-18.github.io/Restro-Web/
+  Desc: It is responsive on all kind of mobile devices. Responsiveness across laptop devices is still under development.
+  Technology Used: HTML, CSS, JS, BOOTSTRAP4, AJAX, JSON
+ 
+2.Portfolio
+  Link: https://kunal-gulati-18.github.io/Portfolio/
+  Desc: It is responsive on all devices.
+  Technology Used: HTML, CSS, JS, BOOTSTRAP4
+
+4.MernsApp
+  Link: https://mernsapp.herokuapp.com/login
+  Desc: It is a social media application which consists of multiple functionalities.
+  Technology used: MERN stack, React Bootstrap, CSS, Materialize CSS  
+ 
+5.Amazon Clone
+  Link: https://e-commerceapp-b9d75.web.app/
+  Desc:It is the clone of famous amazon app. Still working on the backend of this App.
+  Technology used: React.js, CSS, Material UI and firebase for user authentication.
+
+6.Raahi
+  Link: https://raahi-web.herokuapp.com/
+  Desc: It is a travel diary for a user. Built only the frontend of this app. This application will be extended by appending the backend part to it.
+  Technology Used: React.js, React Bootstrap, CSS, JSON

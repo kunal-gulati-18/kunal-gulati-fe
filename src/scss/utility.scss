@@ -1,0 +1,40 @@
+$alignment: ('center', 'start');
+$sizes: (
+	'4': 4px,
+	'8': 8px,
+	'16': 16px,
+	'32': 32px,
+	'48': 48px,
+);
+
+$positions: ('relative', 'absolute', 'sticky', 'fixed');
+
+@each $position in $alignment {
+	.align-items-#{$position} {
+		align-items: $position;
+	}
+}
+
+@each $size, $value in $sizes {
+	.col-gap-#{$size} {
+		column-gap: $value;
+	}
+
+	.row-gap-#{$size} {
+		row-gap: $value;
+	}
+}
+
+@each $position in $positions {
+	.pos-#{$position} {
+		position: $position;
+	}
+}
+
+.d-flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
