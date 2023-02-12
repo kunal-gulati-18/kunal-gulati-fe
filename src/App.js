@@ -1,38 +1,33 @@
 import React from 'react';
-import { ChakraProvider } from "@chakra-ui/react"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { Offline, Online } from "react-detect-offline";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Offline, Online } from 'react-detect-offline';
 import Homepage from './components/main-page/Homepage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ErrorPage from './components/error-page/404_page';
 import NetworkError from './components/error-page/NetworkErrorPage';
 import './scss/utility.scss';
 
 const App = () => {
-  return (
-    <>
-    <Online>
-    <ChakraProvider>
-          <Router>
-                <Switch>
-                      <Route exact path="/" component = {Homepage}/> 
-                      <Route component = {ErrorPage}/> 
-                </Switch>
-          </Router>
-    </ChakraProvider>
-    </Online>
+	return (
+		<>
+			<Online>
+				<>
+					<Router>
+						<Switch>
+							<Route exact path="/" component={Homepage} />
+							<Route component={ErrorPage} />
+						</Switch>
+					</Router>
+				</>
+			</Online>
 
-    <Offline>
-    <ChakraProvider>
-        <NetworkError/>
-    </ChakraProvider>        
-    </Offline>
-    </>
-  );
-}
+			<Offline>
+				<>
+					<NetworkError />
+				</>
+			</Offline>
+		</>
+	);
+};
 
 export default App;
